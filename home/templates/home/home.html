@@ -1,0 +1,149 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block header %}
+<div class="jumbotron" id="home">
+  <div class="container text-white" align="center">
+      <p class="lead">Hai,</p>
+      <h1 class="display-1 title">My Name is Sintya</h1>
+      <p class="lead">&#8212 Freelance, Web design, & FullStack Development</p>
+      <div class="btn-group buffer" style="margin-top: 20px;">
+        <center>
+          <a href="https://www.instagram.com/sintttya_/" class="btn btn-dark outline rounded-circle ml-3" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://github.com/Sintya12" class="btn btn-dark outline rounded-circle ml-3" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/sintya-lestari3000/" class="btn btn-dark outline rounded-circle ml-3" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:sintya.ajeng@outlook.com" class="btn btn-dark outline rounded-circle ml-3" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </center>
+      </div>
+  </div>
+
+</div>
+{% endblock header %}
+{% block content %}
+  <div class="container-fluid" id="about">
+    <div class="row">
+      <div class="container" align="center" style="padding-bottom: 100px;">
+        <h2 class="display-4">ABOUT ME</h2>
+        <hr class="mb-5">
+        <div class="profile rounded-circle">
+          <a class="pp" href="{% static 'home/img/pp.png' %}">
+    				<img src="{% static 'home/img/pp.png' %}" class="img-circle pull-center rounded-circle" alt="Profile Picture"/>
+    			</a>
+        </div>
+        <h4 class="text-center mt-4">
+          Ajeng Shintya Lestari
+        </h4>
+        <p class="lead text-center">Seorang pengembang web yang memiliki pengetahuan tentang bahasa pemrograman HTML, CSS, Javascript, PHP, dan Python. Serta memiliki ketertarikan pada bidang desain web dengan menggunakan bahasa pemrograman HTML, CSS dan Javascript.</p>
+  		</div>
+    </div>
+  </div>
+  <div class="container-fluid text-white" align="left" id="project">
+    <div class="container">
+      <h2 class="display-4">PROJECTS</h2>
+      <hr class="mb-5">
+      <div class="card mb-3 bg-transparent border-0" style="padding-top: 60px;">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="{% static 'home/img/tunaskode.png' %}">
+              <img id="img" src="{% static 'home/img/tunaskode.png' %}" class="img-fluid rounded" alt="Responsive image" max-width="100%" height="auto">
+            </a>
+          </div>
+          <div class="col-md-5 ml-5">
+            <div class="card-body">
+              <h2 class="card-title">
+                <a class="text-white" href="https://tunaskode.com/">Tunaskode.com</a>
+              </h2>
+              <p class="card-text">Merupakan Website statis yang dibangun menggunakan bahasa pemograman python sebagai base programming languange, framework django untuk membantu membuat web lebih cepat, serta merancang sendiri desain tampilan website dengan menggunakan framework bootstrap dan bahasa pemograman CSS.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 bg-transparent border-0"  style="margin-top: 100px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <div class="card-body">
+              <h2 class="card-title">
+                <a class="text-white" href="https://codepen.io/sintya12/pen/BazobOJ?editors=1100">Onno .W Purbo Tribute Page</a>
+              </h2>
+              <p class="card-text"><a href="https://id.wikipedia.org/wiki/Onno_W._Purbo">Onno .W Purbo </a>adalah sosok tokoh dan pakar teknologi informasi Indonesia yang pertama kali saya kenal saat belajar komputer sekaligus sosok yang cukup saya kagumi. Kenapa? Selain banyak prestasi yang telah diraih, beliau adalah orang yang dermawan ilmu. Beliau senantiasa memberikan ilmu secara cuma - cuma kepada orang yang ingin belajar tentang sebuah teknologi informasi. Dengan cukup mengunjungi website <a href="http://onnocenter.or.id/">Onno Center</a> untuk mengetahui bagaimana beliau memberikan ilmu tersebut.</p>
+            </div>
+          </div>
+          <div class="col-md-6 ml-5" style="margin-bottom: 200px;">
+            <a href="{% static 'home/img/Onno-W-Prubo-Tribute-Page.png' %}">
+              <img id="img" src="{% static 'home/img/Onno-W-Prubo-Tribute-Page.png' %}" class="img-fluid rounded" alt="Responsive image">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="favorites" align="right">
+    <div class="container" style="padding-bottom: 100px;">
+      <h2 class="display-4">FAVORITES</h2>
+      <hr class="mb-5">
+      <div class="card-deck" align="center">
+        <div class="card">
+          <i class="fa fa-youtube-play" aria-hidden="true" style="color:red;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Favorites Youtubers</h5>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/user/faqihzamukhlish">Kelas Terbuka</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/Max204204204">Max Goodridge</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/results?search_query=onno+w+purbo">Onno Center</a>
+              </li>
+            </ul>
+            <p class="card-text">Konten yang dibuat oleh mereka sangat bagus dan bermanfaat !</p>
+          </div>
+        </div>
+        <div class="card">
+          <i class="fa fa-code" aria-hidden="true" style="color: purple;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Favorites Frameworks</h5>
+            <ul>
+              <li>
+                <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap</a>
+              </li>
+              <li>
+                <a href="https://www.djangoproject.com/">Django</a>
+              </li>
+              <li>
+                <a href="https://fontawesome.com/v4.7.0/">Font Awesome</a>
+              </li>
+            </ul>
+            <p class="card-text">Bagaimana denganmu ?</p>
+          </div>
+        </div>
+        <div class="card">
+          <i class="fa fa-mobile" aria-hidden="true" style="color: blue;"></i>
+          <div class="card-body">
+            <h5 class="card-title">Favorites Platform</h5>
+            <ul>
+              <li>
+                <a href="https://unsplash.com/">Unsplash</a>
+              </li>
+              <li>
+                <a href="https://cookpad.com/id">Cookpad</a>
+              </li>
+              <li>
+                <a href="https://www.freecodecamp.org/">Freecodecamp</a>
+              </li>
+            </ul>
+            <p class="card-text">Semuanya gratis untuk digunakan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="footer">
+    <footer class="footer-copyright text-center py-3 text-white">
+      © 2020, Indonesia
+    </footer>
+  </div>
+</div>
+{% endblock content %}
